@@ -43,7 +43,7 @@ python setup.py install
 ## Running
 
 - install into wis2node container/environment
-- update WIS2NODE_DATADIR_DATA_MAPPINGS (see sample data-mappings.yml)
+- update `WIS2NODE_DATADIR_DATA_MAPPINGS` (see sample `data-mappings.yml`)
 
 
 ## Development
@@ -78,4 +78,4 @@ All bugs, enhancements and issues are managed on [GitHub](https://github.com/wmo
 
 ## Contact
 
-* Firstname Lastname
+* [Tom Kralidis](https://github.com/tomkralidis)
