@@ -1,0 +1,5 @@
+
+# set the WIS2NODE_DATADIR_DATA_MAPPINGS environment variable to the location of this file on disk
+
+data:
+    observations-surface-land.mw.FWCL.landFixed: wis2node_malawi_observations.ObservationData
