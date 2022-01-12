@@ -2,7 +2,7 @@
 
 ## Overview
 
-wis2node Malawi observations data ingest plugin
+[wis2node](https://github.com/wmo-im/wis2node) Malawi observations data ingest plugin
 
 ## Installation
 
@@ -45,6 +45,29 @@ python setup.py install
 - install into wis2node container/environment
 - update `WIS2NODE_DATADIR_DATA_MAPPINGS` (see sample `data-mappings.yml`)
 
+
+```bash
+# create dataset topic hierarchy directories
+wis2node data setup --topic-hierarchy observations-surface-land.mw.FWCL.landFixed
+
+# display dataset topic hierarchy and directories
+wis2node data info --topic-hierarchy observations-surface-land.mw.FWCL.landFixed
+
+# process incoming data file (manually/no PubSub)
+wis2node data process /path/to/file.csv
+
+# process incoming data directory (manually/no PubSub)
+wis2node data process /path/to/dir
+
+# copy discovery-metadata.yml into $WIS2NODE_DATADIR/metadata/discovery
+cp discovery-metadata.yml $WIS2NODE_DATADIR/metadata/discovery
+
+# publish dataset discovery metadata to local catalogue
+wis2node metadata discovery publish observations-surface-land.mw.FWCL.landFixed
+
+# unpublish discovery metadata to local catalogue
+wis2node metadata discovery unpublish observations-surface-land.mw.FWCL.landFixed
+```
 
 ## Development
 
