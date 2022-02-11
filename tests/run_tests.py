@@ -37,7 +37,7 @@ def msg(test_id, test_description):
 
 
 class MalawiObservationsTest(unittest.TestCase):
-    """Test suite for package wis2node_malawi_observations"""
+    """Test suite for package wis2box_malawi_observations"""
     def setUp(self):
         """setup test fixtures, etc."""
         print(msg(self.id(), self.shortDescription()))

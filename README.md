@@ -1,20 +1,20 @@
-# wis2node-malawi-observations
+# wis2box-malawi-observations
 
 ## Overview
 
-[wis2node](https://github.com/wmo-im/wis2node) Malawi observations data ingest plugin
+[wis2box](https://github.com/wmo-im/wis2box) Malawi observations data ingest plugin
 
 ## Installation
 
-The easiest way to install wis2node-malawi-observations is via the Python [pip](https://pip.pypa.io/en/stable/)
+The easiest way to install wis2box-malawi-observations is via the Python [pip](https://pip.pypa.io/en/stable/)
 utility:
 
 ```bash
 # via PyPI
-pip install wis2node-malawi-observations
+pip install wis2box-malawi-observations
 
 # directly from GitHub
-pip install https://github.com/wmo-cop/wis2node-malawi-observations/archive/main.zip
+pip install https://github.com/wmo-cop/wis2box-malawi-observations/archive/main.zip
 ```
 
 ### Requirements
@@ -23,50 +23,50 @@ pip install https://github.com/wmo-cop/wis2node-malawi-observations/archive/main
 
 ### Dependencies
 Dependencies are listed in [requirements.txt](requirements.txt). Dependencies
-are automatically installed during wis2node-malawi-observations installation.
+are automatically installed during wis2box-malawi-observations installation.
 
-### Installing wis2node-malawi-observations
+### Installing wis2box-malawi-observations
 
 ```bash
 # setup virtualenv
-python3 -m venv --system-site-packages wis2node-malawi-observations
-cd wis2node-malawi-observations
+python3 -m venv --system-site-packages wis2box-malawi-observations
+cd wis2box-malawi-observations
 source bin/activate
 
 # clone codebase and install
-git clone https://github.com/wmo-cop/wis2node-malawi-observations.git
-cd wis2node-malawi-observations
+git clone https://github.com/wmo-cop/wis2box-malawi-observations.git
+cd wis2box-malawi-observations
 python setup.py build
 python setup.py install
 ```
 
 ## Running
 
-- install into wis2node container/environment
-- update `WIS2NODE_DATADIR_DATA_MAPPINGS` (see sample `data-mappings.yml`)
+- install into wis2box container/environment
+- update `WIS2BOX_DATADIR_DATA_MAPPINGS` (see sample `data-mappings.yml`)
 
 
 ```bash
 # create dataset topic hierarchy directories
-wis2node data setup --topic-hierarchy observations-surface-land.mw.FWCL.landFixed
+wis2box data setup --topic-hierarchy observations-surface-land.mw.FWCL.landFixed
 
 # display dataset topic hierarchy and directories
-wis2node data info --topic-hierarchy observations-surface-land.mw.FWCL.landFixed
+wis2box data info --topic-hierarchy observations-surface-land.mw.FWCL.landFixed
 
 # process incoming data file (manually/no PubSub)
-wis2node data process /path/to/file.csv
+wis2box data process /path/to/file.csv
 
 # process incoming data directory (manually/no PubSub)
-wis2node data process /path/to/dir
+wis2box data process /path/to/dir
 
-# copy discovery-metadata.yml into $WIS2NODE_DATADIR/metadata/discovery
-cp discovery-metadata.yml $WIS2NODE_DATADIR/metadata/discovery
+# copy discovery-metadata.yml into $WIS2BOX_DATADIR/metadata/discovery
+cp discovery-metadata.yml $WIS2BOX_DATADIR/metadata/discovery
 
 # publish dataset discovery metadata to local catalogue
-wis2node metadata discovery publish observations-surface-land.mw.FWCL.landFixed
+wis2box metadata discovery publish observations-surface-land.mw.FWCL.landFixed
 
 # unpublish discovery metadata to local catalogue
-wis2node metadata discovery unpublish observations-surface-land.mw.FWCL.landFixed
+wis2box metadata discovery unpublish observations-surface-land.mw.FWCL.landFixed
 ```
 
 ## Development
@@ -97,7 +97,7 @@ twine upload dist/*
 
 ### Bugs and Issues
 
-All bugs, enhancements and issues are managed on [GitHub](https://github.com/wmo-cop/wis2node-malawi-observations/issues).
+All bugs, enhancements and issues are managed on [GitHub](https://github.com/wmo-cop/wis2box-malawi-observations/issues).
 
 ## Contact
 

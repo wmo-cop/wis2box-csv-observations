@@ -28,8 +28,8 @@ import re
 
 from csv2bufr import MAPPINGS, transform as transform_csv
 
-from wis2node.data.base import BaseAbstractData
-from wis2node.env import DATADIR
+from wis2box.data.base import BaseAbstractData
+from wis2box.env import DATADIR
 
 LOGGER = logging.getLogger(__name__)
 
@@ -40,7 +40,7 @@ class ObservationData(BaseAbstractData):
         """
         Abstract data initializer
 
-        :param topic_hierarchy: `wis2node.topic_hierarchy.TopicHierarchy`
+        :param topic_hierarchy: `wis2box.topic_hierarchy.TopicHierarchy`
                                 object
 
         :returns: `None`

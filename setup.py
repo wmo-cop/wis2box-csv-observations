@@ -50,7 +50,7 @@ def read(filename, encoding='utf-8'):
 
 def get_package_version():
     """get version from top-level package init"""
-    version_file = read('wis2node_malawi_observations/__init__.py')
+    version_file = read('wis2box_malawi_observations/__init__.py')
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
                               version_file, re.M)
     if version_match:
@@ -61,13 +61,13 @@ def get_package_version():
 KEYWORDS = [
     'wmo',
     'wis 2.0',
-    'wis2node',
-    'wis2node plugin',
+    'wis2box',
+    'wis2box plugin',
     'malawi',
     'observations'
 ]
 
-DESCRIPTION = 'wis2node Malawi observations data ingest plugin'
+DESCRIPTION = 'wis2box Malawi observations data ingest plugin'
 
 
 # ensure a fresh MANIFEST file is generated
@@ -76,7 +76,7 @@ if (os.path.exists('MANIFEST')):
 
 
 setup(
-    name='wis2node-malawi-observations',
+    name='wis2box-malawi-observations',
     version=get_package_version(),
     description=DESCRIPTION.strip(),
     long_description=read('README.md'),
@@ -88,7 +88,7 @@ setup(
     author_email='tomkralidis@gmail.com',
     maintainer='Tom Kralidis',
     maintainer_email='tomkralidis@gmail.com',
-    url='https://github.com/tomkralidis/wis2node-malawi-observations',
+    url='https://github.com/wmo-cop/wis2box-malawi-observations',
     install_requires=read('requirements.txt').splitlines(),
     packages=find_packages(),
     include_package_data=True,
