@@ -49,7 +49,6 @@ class ObservationData(BaseAbstractData):
         super().__init__(topic_hierarchy)
 
         self.mappings = {}
-        self.output_data = {}
 
         mapping_bufr4 = Path(MAPPINGS) / 'malawi_synop_bufr.json'
         mapping_geojson = Path(MAPPINGS) / 'malawi_synop_json.geojson'
