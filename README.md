@@ -1,20 +1,20 @@
-# wis2box-malawi-observations
+# wis2box-csv-observations
 
 ## Overview
 
-[wis2box](https://github.com/wmo-im/wis2box) Malawi observations data ingest plugin
+[wis2box](https://github.com/wmo-im/wis2box) CSV observations data ingest plugin
 
 ## Installation
 
-The easiest way to install wis2box-malawi-observations is via the Python [pip](https://pip.pypa.io/en/stable/)
+The easiest way to install wis2box-csv-observations is via the Python [pip](https://pip.pypa.io/en/stable/)
 utility:
 
 ```bash
 # via PyPI
-pip install wis2box-malawi-observations
+pip install wis2box-csv-observations
 
 # directly from GitHub
-pip install https://github.com/wmo-cop/wis2box-malawi-observations/archive/main.zip
+pip install https://github.com/wmo-cop/wis2box-csv-observations/archive/main.zip
 ```
 
 ### Requirements
@@ -23,19 +23,19 @@ pip install https://github.com/wmo-cop/wis2box-malawi-observations/archive/main.
 
 ### Dependencies
 Dependencies are listed in [requirements.txt](requirements.txt). Dependencies
-are automatically installed during wis2box-malawi-observations installation.
+are automatically installed during wis2box-csv-observations installation.
 
-### Installing wis2box-malawi-observations
+### Installing wis2box-csv-observations
 
 ```bash
 # setup virtualenv
-python3 -m venv --system-site-packages wis2box-malawi-observations
-cd wis2box-malawi-observations
+python3 -m venv --system-site-packages wis2box-csv-observations
+cd wis2box-csv-observations
 source bin/activate
 
 # clone codebase and install
-git clone https://github.com/wmo-cop/wis2box-malawi-observations.git
-cd wis2box-malawi-observations
+git clone https://github.com/wmo-cop/wis2box-csv-observations.git
+cd wis2box-csv-observations
 python setup.py build
 python setup.py install
 ```
@@ -97,7 +97,7 @@ twine upload dist/*
 
 ### Bugs and Issues
 
-All bugs, enhancements and issues are managed on [GitHub](https://github.com/wmo-cop/wis2box-malawi-observations/issues).
+All bugs, enhancements and issues are managed on [GitHub](https://github.com/wmo-cop/wis2box-csv-observations/issues).
 
 ## Contact
 

@@ -1,2 +1,2 @@
 include README.md LICENSE requirements.txt
-recursive-include wis2box_malawi_observations *.json *.geojson
+recursive-include wis2box_csv_observations *.json *.geojson

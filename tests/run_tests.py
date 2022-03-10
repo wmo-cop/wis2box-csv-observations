@@ -36,8 +36,8 @@ def msg(test_id, test_description):
     return '{}: {}'.format(test_id, test_description)
 
 
-class MalawiObservationsTest(unittest.TestCase):
-    """Test suite for package wis2box_malawi_observations"""
+class CSVObservationsTest(unittest.TestCase):
+    """Test suite for package wis2box_csv_observations"""
     def setUp(self):
         """setup test fixtures, etc."""
         print(msg(self.id(), self.shortDescription()))
