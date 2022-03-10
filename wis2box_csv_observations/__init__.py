@@ -50,8 +50,8 @@ class ObservationData(BaseAbstractData):
 
         self.mappings = {}
 
-        mapping_bufr4 = Path(MAPPINGS) / 'malawi_synop_bufr.json'
-        mapping_geojson = Path(MAPPINGS) / 'malawi_synop_json.geojson'
+        mapping_bufr4 = Path(MAPPINGS) / 'synop_bufr.json'
+        mapping_geojson = Path(MAPPINGS) / 'synop_json.geojson'
 
         with mapping_bufr4.open() as fh1, mapping_geojson.open() as fh2:
             self.mappings['bufr4'] = json.load(fh1)
