@@ -2,4 +2,4 @@
 # set the WIS2BOX_DATADIR_DATA_MAPPINGS environment variable to the location of this file on disk
 
 data:
-    observations-surface-land.mw.FWCL.landFixed: wis2box_csv_observations.ObservationData
+    mw.mw_met_centre.data.core.weather.surface-based-observations.synop: wis2box_csv_observations.ObservationData
